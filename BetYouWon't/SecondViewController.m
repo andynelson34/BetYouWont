@@ -13,6 +13,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *challengeNameView;
 @property (weak, nonatomic) IBOutlet UITextField *challengeDescriptionView;
 @property (weak, nonatomic) IBOutlet UITextField *timeLimitView;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionText;
+@property (weak, nonatomic) IBOutlet UILabel *titleText;
+@property (weak, nonatomic) IBOutlet UILabel *timeLimitText;
+@property (weak, nonatomic) IBOutlet UIDatePicker *timeLimitPicker;
+@property (weak, nonatomic) IBOutlet UILabel *peopleText;
 
 
 @end
@@ -25,6 +30,8 @@
     CGRect timeLimitRect = self.timeLimitView.frame;
     timeLimitRect.size.width = self.view.frame.size.width / 2;
     self.timeLimitView.frame = timeLimitRect;
+    NSDate *currentTime = [NSDate date];
+    [self.timeLimitPicker setMinimumDate:currentTime];
 }
 
 - (void)didReceiveMemoryWarning {
