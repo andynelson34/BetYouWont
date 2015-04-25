@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *challengeNameView;
 @property (weak, nonatomic) IBOutlet UITextField *challengeDescriptionView;
 @property (weak, nonatomic) IBOutlet UITextField *timeLimitView;
+@property (weak, nonatomic) IBOutlet UIPickerView *unitPicker;
 
 
 @end
@@ -22,6 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CGRect timeLimitRect = self.timeLimitView.frame;
+    timeLimitRect.size.width = self.view.frame.size.width / 2;
+    self.timeLimitView.frame = timeLimitRect;
 }
 
 - (void)didReceiveMemoryWarning {
