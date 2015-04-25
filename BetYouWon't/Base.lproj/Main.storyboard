@@ -4,6 +4,50 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="sdT-FP-tqM">
+            <objects>
+                <tableViewController id="IWM-qj-BE6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KXN-cM-faH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GHR-mn-vh3">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GHR-mn-vh3" id="oWU-0i-c8m">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IWM-qj-BE6" id="HGD-1G-anb"/>
+                            <outlet property="delegate" destination="IWM-qj-BE6" id="Mgr-hc-Dft"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Lae-IW-6uD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cV-0m-PRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="-1018"/>
+        </scene>
+        <!--Current Challenges-->
+        <scene sceneID="BS8-dd-am6">
+            <objects>
+                <navigationController id="tgQ-U0-U76" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Current Challenges" id="Vba-Be-YRZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhT-oS-9ad">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IWM-qj-BE6" kind="relationship" relationship="rootViewController" id="Udz-Fm-7ic"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4MP-zG-u9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-1018"/>
+        </scene>
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -43,25 +87,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
-        </scene>
-        <!--Answer Challenge-->
-        <scene sceneID="g4r-8J-Jmc">
-            <objects>
-                <viewController id="rta-Vg-tCE" customClass="AnswerChallengeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TS6-29-8Jc"/>
-                        <viewControllerLayoutGuide type="bottom" id="W2K-ij-7m3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fN9-LC-D5s">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Answer Challenge" id="bt0-PK-NQW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2MN-hK-4Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="765" y="-1018"/>
         </scene>
         <!--New Challenge-->
         <scene sceneID="wg7-f3-ORb">
@@ -135,7 +160,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="rta-Vg-tCE" kind="relationship" relationship="viewControllers" id="Hyd-Fd-57G"/>
+                        <segue destination="tgQ-U0-U76" kind="relationship" relationship="viewControllers" id="TLx-LQ-iLj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
