@@ -20,7 +20,7 @@
 		849244941AEB63DA00BC41E8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244931AEB63DA00BC41E8 /* FBSDKLoginKit.framework */; };
 		849244961AEB63E600BC41E8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244951AEB63E600BC41E8 /* FBSDKShareKit.framework */; };
 		849244981AEB648200BC41E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244971AEB648200BC41E8 /* Bolts.framework */; };
-		8492449E1AEBF08F00BC41E8 /* AnswerChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492449D1AEBF08F00BC41E8 /* AnswerChallengeViewController.m */; };
+		849244A41AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244A31AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		849244931AEB63DA00BC41E8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		849244951AEB63E600BC41E8 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		849244971AEB648200BC41E8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
-		8492449C1AEBF08F00BC41E8 /* AnswerChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerChallengeViewController.h; sourceTree = "<group>"; };
-		8492449D1AEBF08F00BC41E8 /* AnswerChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerChallengeViewController.m; sourceTree = "<group>"; };
+		849244A21AEBFE9000BC41E8 /* CurrentChallengesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentChallengesTableViewController.h; sourceTree = "<group>"; };
+		849244A31AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentChallengesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 				8492446E1AEB60BC00BC41E8 /* FirstViewController.m */,
 				849244701AEB60BC00BC41E8 /* SecondViewController.h */,
 				849244711AEB60BC00BC41E8 /* SecondViewController.m */,
-				8492449C1AEBF08F00BC41E8 /* AnswerChallengeViewController.h */,
-				8492449D1AEBF08F00BC41E8 /* AnswerChallengeViewController.m */,
+				849244A21AEBFE9000BC41E8 /* CurrentChallengesTableViewController.h */,
+				849244A31AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m */,
 				849244731AEB60BC00BC41E8 /* Main.storyboard */,
 				849244761AEB60BC00BC41E8 /* Images.xcassets */,
 				849244781AEB60BC00BC41E8 /* LaunchScreen.xib */,
@@ -250,10 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				849244721AEB60BC00BC41E8 /* SecondViewController.m in Sources */,
-				8492449E1AEBF08F00BC41E8 /* AnswerChallengeViewController.m in Sources */,
 				8492446C1AEB60BC00BC41E8 /* AppDelegate.m in Sources */,
 				8492446F1AEB60BC00BC41E8 /* FirstViewController.m in Sources */,
 				849244691AEB60BC00BC41E8 /* main.m in Sources */,
+				849244A41AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
