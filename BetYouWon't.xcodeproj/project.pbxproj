@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24B347B81AEC2A6C00619126 /* BYWlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347B71AEC2A6C00619126 /* BYWlogo2.png */; };
+		24B347C31AEC484100619126 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B347C21AEC484100619126 /* ProfileViewController.m */; };
 		849244691AEB60BC00BC41E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244681AEB60BC00BC41E8 /* main.m */; };
 		8492446C1AEB60BC00BC41E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492446B1AEB60BC00BC41E8 /* AppDelegate.m */; };
 		8492446F1AEB60BC00BC41E8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492446E1AEB60BC00BC41E8 /* FirstViewController.m */; };
@@ -35,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		24B347B71AEC2A6C00619126 /* BYWlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BYWlogo2.png; sourceTree = "<group>"; };
+		24B347C11AEC484100619126 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		24B347C21AEC484100619126 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		849244631AEB60BC00BC41E8 /* BetYouWon't.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetYouWon't.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849244671AEB60BC00BC41E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849244681AEB60BC00BC41E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				849244761AEB60BC00BC41E8 /* Images.xcassets */,
 				849244781AEB60BC00BC41E8 /* LaunchScreen.xib */,
 				849244661AEB60BC00BC41E8 /* Supporting Files */,
+				24B347C11AEC484100619126 /* ProfileViewController.h */,
+				24B347C21AEC484100619126 /* ProfileViewController.m */,
 			);
 			path = "BetYouWon't";
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				8492446C1AEB60BC00BC41E8 /* AppDelegate.m in Sources */,
 				8492446F1AEB60BC00BC41E8 /* FirstViewController.m in Sources */,
 				849244691AEB60BC00BC41E8 /* main.m in Sources */,
+				24B347C31AEC484100619126 /* ProfileViewController.m in Sources */,
 				849244A41AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
