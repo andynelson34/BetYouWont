@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (![FBSDKAccessToken currentAccessToken]) {
-        
         // Disable tab bar interaction if user isn't logged in
         for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
             [tmpTabBarItem setEnabled:NO];
@@ -28,10 +27,10 @@
         loginButton.center = self.view.center;
         [self.view addSubview:loginButton];
     } else {
+        // Enable tab bar interaction if user is logged in
         for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
             [tmpTabBarItem setEnabled:YES];
         }
-        
     }
     // Do any additional setup after loading the view, typically from a nib.
 }

@@ -10,6 +10,11 @@
 
 @interface SecondViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *challengeNameView;
+@property (weak, nonatomic) IBOutlet UITextField *challengeDescriptionView;
+@property (weak, nonatomic) IBOutlet UITextField *timeLimitView;
+
+
 @end
 
 @implementation SecondViewController
