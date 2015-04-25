@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *challengeNameView;
 @property (weak, nonatomic) IBOutlet UITextField *challengeDescriptionView;
 @property (weak, nonatomic) IBOutlet UITextField *timeLimitView;
-@property (weak, nonatomic) IBOutlet UIPickerView *unitPicker;
 
 
 @end
