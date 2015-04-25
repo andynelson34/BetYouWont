@@ -18,9 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
-    [self.view addSubview:loginButton];
+    if (![FBSDKAccessToken currentAccessToken]) {
+        
+        // Disable tab bar interaction if user isn't logged in
+        for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
+            [tmpTabBarItem setEnabled:NO];
+        }
+        FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+        loginButton.center = self.view.center;
+        [self.view addSubview:loginButton];
+    } else {
+        for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
+            [tmpTabBarItem setEnabled:YES];
+        }
+        
+    }
     // Do any additional setup after loading the view, typically from a nib.
 }
 
