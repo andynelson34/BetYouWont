@@ -89,6 +89,7 @@
 		8492445A1AEB60BC00BC41E8 = {
 			isa = PBXGroup;
 			children = (
+				9271B8701AEC5B5C00C05F97 /* restapi */,
 				842CD2851AEC55BD00E2D037 /* Bolts.framework */,
 				842CD2861AEC55BD00E2D037 /* FBSDKCoreKit.framework */,
 				842CD2871AEC55BD00E2D037 /* FBSDKLoginKit.framework */,
@@ -156,6 +157,13 @@
 				849244841AEB60BC00BC41E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9271B8701AEC5B5C00C05F97 /* restapi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = restapi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +409,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "BetYouWon't/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +427,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "BetYouWon't/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
