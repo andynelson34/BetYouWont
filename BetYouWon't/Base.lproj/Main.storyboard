@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Current Challenges-->
         <scene sceneID="sdT-FP-tqM">
             <objects>
-                <tableViewController id="IWM-qj-BE6" sceneMemberID="viewController">
+                <tableViewController id="IWM-qj-BE6" customClass="CurrentChallengesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KXN-cM-faH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,12 +20,13 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="IWM-qj-BE6" id="HGD-1G-anb"/>
-                            <outlet property="delegate" destination="IWM-qj-BE6" id="Mgr-hc-Dft"/>
+                            <outlet property="dataSource" destination="IWM-qj-BE6" id="bLh-Ew-AcH"/>
+                            <outlet property="delegate" destination="IWM-qj-BE6" id="9j5-Q3-uFT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Lae-IW-6uD"/>
+                    <navigationItem key="navigationItem" title="Current Challenges" id="Lae-IW-6uD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cV-0m-PRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
