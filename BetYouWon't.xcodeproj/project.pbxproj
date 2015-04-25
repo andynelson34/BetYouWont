@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		24B347B81AEC2A6C00619126 /* BYWlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347B71AEC2A6C00619126 /* BYWlogo2.png */; };
 		24B347C31AEC484100619126 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B347C21AEC484100619126 /* ProfileViewController.m */; };
+		842CD2891AEC55BD00E2D037 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2851AEC55BD00E2D037 /* Bolts.framework */; };
+		842CD28A1AEC55BD00E2D037 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2861AEC55BD00E2D037 /* FBSDKCoreKit.framework */; };
+		842CD28B1AEC55BD00E2D037 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2871AEC55BD00E2D037 /* FBSDKLoginKit.framework */; };
+		842CD28C1AEC55BD00E2D037 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2881AEC55BD00E2D037 /* FBSDKShareKit.framework */; };
 		849244691AEB60BC00BC41E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244681AEB60BC00BC41E8 /* main.m */; };
 		8492446C1AEB60BC00BC41E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492446B1AEB60BC00BC41E8 /* AppDelegate.m */; };
 		8492446F1AEB60BC00BC41E8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8492446E1AEB60BC00BC41E8 /* FirstViewController.m */; };
@@ -17,10 +21,6 @@
 		849244771AEB60BC00BC41E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849244761AEB60BC00BC41E8 /* Images.xcassets */; };
 		8492447A1AEB60BC00BC41E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849244781AEB60BC00BC41E8 /* LaunchScreen.xib */; };
 		849244861AEB60BC00BC41E8 /* BetYouWon_tTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244851AEB60BC00BC41E8 /* BetYouWon_tTests.m */; };
-		849244921AEB63CA00BC41E8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244911AEB63CA00BC41E8 /* FBSDKCoreKit.framework */; };
-		849244941AEB63DA00BC41E8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244931AEB63DA00BC41E8 /* FBSDKLoginKit.framework */; };
-		849244961AEB63E600BC41E8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244951AEB63E600BC41E8 /* FBSDKShareKit.framework */; };
-		849244981AEB648200BC41E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849244971AEB648200BC41E8 /* Bolts.framework */; };
 		849244A41AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244A31AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m */; };
 		849244A71AEC440300BC41E8 /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244A61AEC440300BC41E8 /* ChallengeTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +39,10 @@
 		24B347B71AEC2A6C00619126 /* BYWlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BYWlogo2.png; sourceTree = "<group>"; };
 		24B347C11AEC484100619126 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		24B347C21AEC484100619126 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		842CD2851AEC55BD00E2D037 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		842CD2861AEC55BD00E2D037 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		842CD2871AEC55BD00E2D037 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		842CD2881AEC55BD00E2D037 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		849244631AEB60BC00BC41E8 /* BetYouWon't.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetYouWon't.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849244671AEB60BC00BC41E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849244681AEB60BC00BC41E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,10 +58,6 @@
 		8492447F1AEB60BC00BC41E8 /* BetYouWon'tTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BetYouWon'tTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849244841AEB60BC00BC41E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849244851AEB60BC00BC41E8 /* BetYouWon_tTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetYouWon_tTests.m; sourceTree = "<group>"; };
-		849244911AEB63CA00BC41E8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		849244931AEB63DA00BC41E8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		849244951AEB63E600BC41E8 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		849244971AEB648200BC41E8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		849244A21AEBFE9000BC41E8 /* CurrentChallengesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentChallengesTableViewController.h; sourceTree = "<group>"; };
 		849244A31AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentChallengesTableViewController.m; sourceTree = "<group>"; };
 		849244A51AEC440200BC41E8 /* ChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewController.h; sourceTree = "<group>"; };
@@ -69,10 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849244921AEB63CA00BC41E8 /* FBSDKCoreKit.framework in Frameworks */,
-				849244941AEB63DA00BC41E8 /* FBSDKLoginKit.framework in Frameworks */,
-				849244961AEB63E600BC41E8 /* FBSDKShareKit.framework in Frameworks */,
-				849244981AEB648200BC41E8 /* Bolts.framework in Frameworks */,
+				842CD28C1AEC55BD00E2D037 /* FBSDKShareKit.framework in Frameworks */,
+				842CD2891AEC55BD00E2D037 /* Bolts.framework in Frameworks */,
+				842CD28A1AEC55BD00E2D037 /* FBSDKCoreKit.framework in Frameworks */,
+				842CD28B1AEC55BD00E2D037 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +89,10 @@
 		8492445A1AEB60BC00BC41E8 = {
 			isa = PBXGroup;
 			children = (
-				849244971AEB648200BC41E8 /* Bolts.framework */,
-				849244951AEB63E600BC41E8 /* FBSDKShareKit.framework */,
-				849244931AEB63DA00BC41E8 /* FBSDKLoginKit.framework */,
-				849244911AEB63CA00BC41E8 /* FBSDKCoreKit.framework */,
+				842CD2851AEC55BD00E2D037 /* Bolts.framework */,
+				842CD2861AEC55BD00E2D037 /* FBSDKCoreKit.framework */,
+				842CD2871AEC55BD00E2D037 /* FBSDKLoginKit.framework */,
+				842CD2881AEC55BD00E2D037 /* FBSDKShareKit.framework */,
 				849244651AEB60BC00BC41E8 /* BetYouWon't */,
 				849244821AEB60BC00BC41E8 /* BetYouWon'tTests */,
 				849244641AEB60BC00BC41E8 /* Products */,
@@ -398,6 +398,7 @@
 					"$(inherited)",
 					/Users/andynelson/Documents/FacebookSDK,
 					/Users/emshack92/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "BetYouWon't/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -414,6 +415,7 @@
 					"$(inherited)",
 					/Users/andynelson/Documents/FacebookSDK,
 					/Users/emshack92/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "BetYouWon't/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
