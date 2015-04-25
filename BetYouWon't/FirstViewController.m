@@ -31,6 +31,7 @@
         for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
             [tmpTabBarItem setEnabled:YES];
         }
+        //Display news feed
     }
     // Do any additional setup after loading the view, typically from a nib.
 }

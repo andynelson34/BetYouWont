@@ -102,22 +102,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Challenge name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDi-AG-wWw">
-                                <rect key="frame" x="16" y="28" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time limit (days)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-xC-KQ7">
-                                <rect key="frame" x="16" y="116" width="568" height="30"/>
+                                <rect key="frame" x="16" y="91" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Challenge description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-eX-Qvg">
-                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <rect key="frame" x="16" y="156" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Time Limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4x-xA-oel">
+                                <rect key="frame" x="258" y="211" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2y-Tk-aFT">
+                                <rect key="frame" x="256" y="134" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx8-NX-BhK">
+                                <rect key="frame" x="284" y="69" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="DRE-9y-OsH">
+                                <rect key="frame" x="38" y="234" width="524" height="144"/>
+                                <date key="date" timeIntervalSinceReferenceDate="451673749.48838699">
+                                    <!--2015-04-25 16:55:49 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Participants" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAG-5O-yUf">
+                                <rect key="frame" x="252" y="450" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FM-Gq-LhW">
-                                <rect key="frame" x="241" y="154" width="118" height="30"/>
+                                <rect key="frame" x="241" y="513" width="118" height="30"/>
                                 <state key="normal" title="Create Challenge">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -125,23 +150,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0FM-Gq-LhW" secondAttribute="centerX" id="041-dS-tQV"/>
                             <constraint firstItem="gV7-eX-Qvg" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="0uu-Nk-bft"/>
-                            <constraint firstItem="gC6-xC-KQ7" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="Ebz-Kp-jjP"/>
+                            <constraint firstAttribute="centerX" secondItem="DRE-9y-OsH" secondAttribute="centerX" id="4Ir-Tv-yU7"/>
                             <constraint firstAttribute="centerX" secondItem="gV7-eX-Qvg" secondAttribute="centerX" id="MJA-Ze-Ezn"/>
-                            <constraint firstAttribute="centerX" secondItem="gC6-xC-KQ7" secondAttribute="centerX" id="NAk-zp-nW8"/>
                             <constraint firstAttribute="trailing" secondItem="TDi-AG-wWw" secondAttribute="trailing" constant="16" id="ZOf-i5-CrB"/>
                             <constraint firstAttribute="centerX" secondItem="TDi-AG-wWw" secondAttribute="centerX" id="bHK-GI-xVj"/>
-                            <constraint firstAttribute="trailing" secondItem="gC6-xC-KQ7" secondAttribute="trailing" constant="16" id="bfz-k3-u1V"/>
                             <constraint firstAttribute="trailing" secondItem="gV7-eX-Qvg" secondAttribute="trailing" constant="16" id="e66-Fm-tZg"/>
-                            <constraint firstAttribute="centerX" secondItem="0FM-Gq-LhW" secondAttribute="centerX" id="iwT-1z-8np"/>
+                            <constraint firstAttribute="centerX" secondItem="bx8-NX-BhK" secondAttribute="centerX" id="ehG-Vm-QwA"/>
+                            <constraint firstAttribute="centerX" secondItem="l2y-Tk-aFT" secondAttribute="centerX" id="lks-Rj-Pq7"/>
                             <constraint firstItem="TDi-AG-wWw" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="owe-sU-USq"/>
+                            <constraint firstAttribute="centerX" secondItem="A4x-xA-oel" secondAttribute="centerX" id="pxP-N3-fmq"/>
+                            <constraint firstAttribute="centerX" secondItem="xAG-5O-yUf" secondAttribute="centerX" id="x2d-ro-3MH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New Challenge" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="challengeDescriptionView" destination="gV7-eX-Qvg" id="SoB-pn-7tj"/>
                         <outlet property="challengeNameView" destination="TDi-AG-wWw" id="ig9-81-dRp"/>
-                        <outlet property="timeLimitView" destination="gC6-xC-KQ7" id="r2v-hJ-sgd"/>
+                        <outlet property="descriptionText" destination="l2y-Tk-aFT" id="ogx-aT-GCu"/>
+                        <outlet property="peopleText" destination="xAG-5O-yUf" id="Ehv-g5-ked"/>
+                        <outlet property="timeLimitPicker" destination="DRE-9y-OsH" id="hvz-rA-zxt"/>
+                        <outlet property="timeLimitText" destination="A4x-xA-oel" id="nh5-ja-kel"/>
+                        <outlet property="titleText" destination="bx8-NX-BhK" id="pNB-dO-Uf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
