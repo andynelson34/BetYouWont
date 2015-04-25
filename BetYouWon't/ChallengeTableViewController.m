@@ -1,26 +1,23 @@
 //
-//  CurrentChallengesTableViewController.m
+//  ChallengeTableViewController.m
 //  BetYouWon't
 //
 //  Created by Andy Nelson on 4/25/15.
 //  Copyright (c) 2015 We Will Studios. All rights reserved.
 //
 
-#import "CurrentChallengesTableViewController.h"
+#import "ChallengeTableViewController.h"
 
-@interface CurrentChallengesTableViewController ()
+@interface ChallengeTableViewController ()
 
 @end
 
-@implementation CurrentChallengesTableViewController
-{
-    NSArray *recipes;
+@implementation ChallengeTableViewController {
+    NSString *challengeName;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    recipes = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -29,22 +26,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [recipes count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"nonono");
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
-    return cell;
+- (void)setChallengeName:(NSString *)challengeStr {
+    challengeName = challengeStr;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,20 +40,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"ChallengeSelected"]) {
-        NSString *challengeName = [self.tableView indexPathForSelectedRow];
-        UITableViewController *destination = [segue destinationViewController];
-        
-        //TODO: set data on next screen
-    }
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"ChallengeSelected" sender:self];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 /*
