@@ -381,6 +381,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/andynelson/Documents/FacebookSDK,
+					/Users/emshack92/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "BetYouWon't/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -396,6 +397,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/andynelson/Documents/FacebookSDK,
+					/Users/emshack92/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "BetYouWon't/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -456,6 +458,7 @@
 				8492448B1AEB60BC00BC41E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8492448C1AEB60BC00BC41E8 /* Build configuration list for PBXNativeTarget "BetYouWon'tTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +467,7 @@
 				8492448E1AEB60BC00BC41E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
