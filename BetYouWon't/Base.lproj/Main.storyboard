@@ -65,7 +65,7 @@
         <scene sceneID="BS8-dd-am6">
             <objects>
                 <navigationController id="tgQ-U0-U76" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Current Challenges" image="archive_filled-32.png" selectedImage="archive_filled-32.png" id="Vba-Be-YRZ"/>
+                    <tabBarItem key="tabBarItem" title="Current Challenges" image="archive_filled-32.png" id="Vba-Be-YRZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhT-oS-9ad">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -131,7 +131,7 @@
                             <constraint firstAttribute="centerX" secondItem="QUN-nx-Jpy" secondAttribute="centerX" id="n3Y-hO-j5y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="exterior_filled-32.png" selectedImage="exterior_filled-32.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="exterior_filled-32.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="newsFeed" destination="anT-2D-JJl" id="T0D-ZP-Ls3"/>
                         <outlet property="newsFeedText" destination="QUN-nx-Jpy" id="2YY-Ze-2Mj"/>
@@ -217,7 +217,7 @@
                             <constraint firstAttribute="centerX" secondItem="xAG-5O-yUf" secondAttribute="centerX" id="x2d-ro-3MH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New Challenge" image="plus-32.png" selectedImage="plus-32.png" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="New Challenge" image="plus-32.png" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="challengeDescriptionView" destination="gV7-eX-Qvg" id="SoB-pn-7tj"/>
                         <outlet property="challengeNameView" destination="TDi-AG-wWw" id="ig9-81-dRp"/>
@@ -301,7 +301,7 @@
                             <constraint firstAttribute="centerX" secondItem="0jR-eU-sFc" secondAttribute="centerX" id="jhl-8T-RS4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="moderator_filled-32.png" selectedImage="moderator_filled-32.png" id="o7s-yy-4ur"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="moderator_filled-32.png" id="o7s-yy-4ur"/>
                     <connections>
                         <outlet property="challengesText" destination="gkm-Yj-tdJ" id="XRF-ER-w7H"/>
                         <outlet property="completedNum" destination="6e7-mY-Grf" id="KY2-8E-P9a"/>
