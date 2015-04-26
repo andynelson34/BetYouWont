@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4DD900C9-B0C4-4897-BA18-40A0B3B9CC7B</string>
+	<string>B8B05DA0-8B35-405D-B3FC-E803C433DE41</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BetYouWon't</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C8630F4A72FBF51D935B546083DFBF60280CEDF1</key>
-		<string>https://github.com/andynelson34/BetYouWont.git</string>
+		<string>github.com:andynelson34/BetYouWont.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BetYouWon't.xcodeproj/project.xcworkspace</string>
+	<string>BetYouWon't.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C8630F4A72FBF51D935B546083DFBF60280CEDF1</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/andynelson34/BetYouWont.git</string>
+	<string>github.com:andynelson34/BetYouWont.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>C8630F4A72FBF51D935B546083DFBF60280CEDF1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BYW</string>
+			<string>BetYouWont</string>
 		</dict>
 	</array>
 </dict>

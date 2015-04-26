@@ -29,6 +29,7 @@
 		849244A71AEC440300BC41E8 /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244A61AEC440300BC41E8 /* ChallengeTableViewController.m */; };
 		9271B8721AEC5D0200C05F97 /* run.py in Resources */ = {isa = PBXBuildFile; fileRef = 9271B8711AEC5D0200C05F97 /* run.py */; };
 		9271B8741AEC5D0800C05F97 /* settings.py in Resources */ = {isa = PBXBuildFile; fileRef = 9271B8731AEC5D0800C05F97 /* settings.py */; };
+		D5756C021AEC95460080CB70 /* WeWillAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D5756C011AEC95460080CB70 /* WeWillAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		849244A61AEC440300BC41E8 /* ChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewController.m; sourceTree = "<group>"; };
 		9271B8711AEC5D0200C05F97 /* run.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = run.py; sourceTree = "<group>"; };
 		9271B8731AEC5D0800C05F97 /* settings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = settings.py; sourceTree = "<group>"; };
+		D5756C001AEC95460080CB70 /* WeWillAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeWillAPI.h; sourceTree = "<group>"; };
+		D5756C011AEC95460080CB70 /* WeWillAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeWillAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				849244661AEB60BC00BC41E8 /* Supporting Files */,
 				24B347C11AEC484100619126 /* ProfileViewController.h */,
 				24B347C21AEC484100619126 /* ProfileViewController.m */,
+				D5756C001AEC95460080CB70 /* WeWillAPI.h */,
+				D5756C011AEC95460080CB70 /* WeWillAPI.m */,
 			);
 			path = "BetYouWon't";
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				8492446C1AEB60BC00BC41E8 /* AppDelegate.m in Sources */,
 				8492446F1AEB60BC00BC41E8 /* FirstViewController.m in Sources */,
 				849244A71AEC440300BC41E8 /* ChallengeTableViewController.m in Sources */,
+				D5756C021AEC95460080CB70 /* WeWillAPI.m in Sources */,
 				849244691AEB60BC00BC41E8 /* main.m in Sources */,
 				24B347C31AEC484100619126 /* ProfileViewController.m in Sources */,
 				849244A41AEBFE9000BC41E8 /* CurrentChallengesTableViewController.m in Sources */,
