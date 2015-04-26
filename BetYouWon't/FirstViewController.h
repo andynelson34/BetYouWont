@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface FirstViewController : UIViewController// <UITableViewDelegate, UITableViewDataSource>
+extern BOOL loggedIn;
 
 
 @end
