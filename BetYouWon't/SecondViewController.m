@@ -26,6 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.challengeNameView.delegate = self;
+    self.challengeDescriptionView.delegate = self;
+    self.timeLimitView.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
     CGRect timeLimitRect = self.timeLimitView.frame;
     timeLimitRect.size.width = self.view.frame.size.width / 2;
@@ -37,6 +40,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)enterData:(UIButton *)sender {
