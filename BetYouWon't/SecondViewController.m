@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLimitText;
 @property (weak, nonatomic) IBOutlet UIDatePicker *timeLimitPicker;
 @property (weak, nonatomic) IBOutlet UILabel *peopleText;
+@property (weak, nonatomic) IBOutlet UITextField *participants;
 
 
 @end
