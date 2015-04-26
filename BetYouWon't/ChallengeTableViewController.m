@@ -18,6 +18,7 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     challengeName = [defaults objectForKey:@"challengeName"];
+    [self setTitle:challengeName];
     
     [super viewDidLoad];
     
