@@ -10,7 +10,6 @@
 #import "ChallengeTableViewController.h"
 
 @interface CurrentChallengesTableViewController ()
-
 @end
 
 @implementation CurrentChallengesTableViewController
@@ -45,6 +44,28 @@
     }
     cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
     //to-do: Replace this image with the profile picture of the challenger
+    NSString *challenger = cell.textLabel.text;
+    //////////////////////
+    
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://5cba3813.ngrok.com/challenge?title=%@", challenger]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    // Set request type
+    request.HTTPMethod = @"GET";
+    
+    // Set params to be sent to the server
+    
+    NSError *error = [[NSError alloc] init];
+    NSHTTPURLResponse *responseCode = nil;
+    
+    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+    
+    // Add values and contenttype to the http header
+    NSString *myStringFiller = [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
+    cell.textLabel.text = myStringFiller;
+    ///////////////////////////
+    
+    //UIImage *image = nil;
+    
     cell.imageView.image = [UIImage imageNamed:@"BYWlogo2.png"];
     return cell;
 }

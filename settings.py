@@ -38,6 +38,10 @@ user_schema = {
 }
 
 challenge_schema = {
+  'title':{
+    'type':'string',
+    'required':True,
+  },
   'from':{
     'type':'string',
     'required':True,
