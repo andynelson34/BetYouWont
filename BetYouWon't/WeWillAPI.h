@@ -16,7 +16,9 @@ extern NSString *endpoint;
 
 - (void) createNewUser:(NSString *) username withFirst:(NSString *) fname withLast:(NSString *) lname;
 
-- (NSDictionary *) getChallenges;
+- (NSDictionary *) getAllChallenges;
+
+- (NSDictionary *) getAllChallengesForUser:(NSString *) user;
 
 - (NSDictionary *) getUsers;
 

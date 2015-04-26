@@ -40,14 +40,24 @@ NSString *endpoint = @"http://5cba3813.ngrok.com";
     [self doPostRequest:@"user" withParams:tmp];
 }
 
-- (NSDictionary *) getChallenges
+- (NSDictionary *) getAllChallenges
 {
     return [self doGetRequest: @"challenge"];
+}
+
+- (NSDictionary *) getAllChallengesForUser:(NSString *) user
+{
+    return [self doGetRequest: [NSString stringWithFormat:@"user?where=\"username\"==\"%@\"&projection={\"challenges\":1}", user]];
 }
 
 - (NSDictionary *) getUsers
 {
     return [self doGetRequest: @"user"];
+}
+
+- (NSDictionary *) getPhotoOfUser:(NSString *) user
+{
+    return [self doGetRequest: [NSString stringWithFormat:@"user?where=\"username\"==\"%@\"&projection={\"pic\":1}", user]];
 }
 
 - (void) doPostRequest: (NSString *) action withParams:(NSDictionary *) params
