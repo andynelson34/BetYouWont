@@ -8,8 +8,11 @@
 
 #import "CurrentChallengesTableViewController.h"
 #import "ChallengeTableViewController.h"
+#import "WeWillAPI.h"
 
-@interface CurrentChallengesTableViewController ()
+@interface CurrentChallengesTableViewController (){
+    WeWillAPI *client;
+}
 
 @end
 
@@ -22,6 +25,8 @@
     [super viewDidLoad];
 
     recipes = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    
+    client = [WeWillAPI alloc];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

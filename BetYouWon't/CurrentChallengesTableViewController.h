@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeWillAPI.h"
 
 @interface CurrentChallengesTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
