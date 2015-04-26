@@ -7,6 +7,7 @@
 //
 
 #import "CurrentChallengesTableViewController.h"
+#import "ChallengeTableViewController.h"
 
 @interface CurrentChallengesTableViewController ()
 
@@ -35,7 +36,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"nonono");
     static NSString *simpleTableIdentifier = @"SimpleTableCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
@@ -44,6 +44,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    //to-do: Replace this image with the profile picture of the challenger
+    cell.imageView.image = [UIImage imageNamed:@"BYWlogo2.png"];
     return cell;
 }
 
@@ -62,10 +64,11 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ChallengeSelected"]) {
-        NSString *challengeName = [self.tableView indexPathForSelectedRow];
-        UITableViewController *destination = [segue destinationViewController];
-        
-        //TODO: set data on next screen
+        NSString *challengeName = [recipes objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:challengeName forKey:@"challengeName"];
+        [defaults synchronize];
     }
 }
 

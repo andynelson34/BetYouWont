@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		24B347B81AEC2A6C00619126 /* BYWlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347B71AEC2A6C00619126 /* BYWlogo2.png */; };
 		24B347C31AEC484100619126 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B347C21AEC484100619126 /* ProfileViewController.m */; };
+		24B347C71AEC871F00619126 /* moderator_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347C61AEC871F00619126 /* moderator_filled-32.png */; };
+		24B347C91AEC878E00619126 /* plus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347C81AEC878E00619126 /* plus-32.png */; };
+		24B347CB1AEC87EA00619126 /* exterior_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347CA1AEC87EA00619126 /* exterior_filled-32.png */; };
+		24B347CD1AEC884F00619126 /* archive_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B347CC1AEC884F00619126 /* archive_filled-32.png */; };
 		842CD2891AEC55BD00E2D037 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2851AEC55BD00E2D037 /* Bolts.framework */; };
 		842CD28A1AEC55BD00E2D037 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2861AEC55BD00E2D037 /* FBSDKCoreKit.framework */; };
 		842CD28B1AEC55BD00E2D037 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842CD2871AEC55BD00E2D037 /* FBSDKLoginKit.framework */; };
@@ -41,6 +45,10 @@
 		24B347B71AEC2A6C00619126 /* BYWlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BYWlogo2.png; sourceTree = "<group>"; };
 		24B347C11AEC484100619126 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		24B347C21AEC484100619126 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		24B347C61AEC871F00619126 /* moderator_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moderator_filled-32.png"; sourceTree = "<group>"; };
+		24B347C81AEC878E00619126 /* plus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-32.png"; sourceTree = "<group>"; };
+		24B347CA1AEC87EA00619126 /* exterior_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exterior_filled-32.png"; sourceTree = "<group>"; };
+		24B347CC1AEC884F00619126 /* archive_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archive_filled-32.png"; sourceTree = "<group>"; };
 		842CD2851AEC55BD00E2D037 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		842CD2861AEC55BD00E2D037 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		842CD2871AEC55BD00E2D037 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -116,6 +124,10 @@
 		849244651AEB60BC00BC41E8 /* BetYouWon't */ = {
 			isa = PBXGroup;
 			children = (
+				24B347C61AEC871F00619126 /* moderator_filled-32.png */,
+				24B347CA1AEC87EA00619126 /* exterior_filled-32.png */,
+				24B347CC1AEC884F00619126 /* archive_filled-32.png */,
+				24B347C81AEC878E00619126 /* plus-32.png */,
 				24B347B71AEC2A6C00619126 /* BYWlogo2.png */,
 				8492446A1AEB60BC00BC41E8 /* AppDelegate.h */,
 				8492446B1AEB60BC00BC41E8 /* AppDelegate.m */,
@@ -255,8 +267,12 @@
 				9271B8721AEC5D0200C05F97 /* run.py in Resources */,
 				24B347B81AEC2A6C00619126 /* BYWlogo2.png in Resources */,
 				849244751AEB60BC00BC41E8 /* Main.storyboard in Resources */,
+				24B347CD1AEC884F00619126 /* archive_filled-32.png in Resources */,
+				24B347CB1AEC87EA00619126 /* exterior_filled-32.png in Resources */,
 				8492447A1AEB60BC00BC41E8 /* LaunchScreen.xib in Resources */,
+				24B347C91AEC878E00619126 /* plus-32.png in Resources */,
 				849244771AEB60BC00BC41E8 /* Images.xcassets in Resources */,
+				24B347C71AEC871F00619126 /* moderator_filled-32.png in Resources */,
 				9271B8741AEC5D0800C05F97 /* settings.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

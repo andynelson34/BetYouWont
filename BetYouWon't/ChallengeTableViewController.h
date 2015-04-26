@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChallengeTableViewController : UITableViewController
+@interface ChallengeTableViewController : UITableViewController {
+    NSString *challengeName;
+}
 
 @end
