@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Current Challenges-->
@@ -104,10 +104,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UhP-lO-Bx0">
-                                <rect key="frame" x="0.0" y="192" width="600" height="351"/>
+                                <rect key="frame" x="0.0" y="82" width="600" height="461"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="anT-2D-JJl">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="351"/>
+                                        <rect key="frame" x="0.0" y="2" width="600" height="459"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableView>
                                 </subviews>
@@ -116,7 +116,7 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="News Feed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-nx-Jpy">
-                                <rect key="frame" x="257" y="139" width="87" height="21"/>
+                                <rect key="frame" x="257" y="53" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -194,8 +194,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FM-Gq-LhW">
-                                <rect key="frame" x="241" y="513" width="118" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Who would you like to challenge?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyD-Aj-Fec">
+                                <rect key="frame" x="164" y="475" width="268" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FM-Gq-LhW">
+                                <rect key="frame" x="241" y="491" width="118" height="30"/>
                                 <state key="normal" title="Create Challenge">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -209,7 +214,9 @@
                             <constraint firstAttribute="centerX" secondItem="0FM-Gq-LhW" secondAttribute="centerX" id="041-dS-tQV"/>
                             <constraint firstItem="gV7-eX-Qvg" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="0uu-Nk-bft"/>
                             <constraint firstAttribute="centerX" secondItem="DRE-9y-OsH" secondAttribute="centerX" id="4Ir-Tv-yU7"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="0FM-Gq-LhW" secondAttribute="bottom" constant="30" id="BX1-oq-aus"/>
                             <constraint firstAttribute="centerX" secondItem="gV7-eX-Qvg" secondAttribute="centerX" id="MJA-Ze-Ezn"/>
+                            <constraint firstAttribute="centerX" secondItem="vyD-Aj-Fec" secondAttribute="centerX" id="QKm-kV-8pu"/>
                             <constraint firstAttribute="trailing" secondItem="TDi-AG-wWw" secondAttribute="trailing" constant="16" id="ZOf-i5-CrB"/>
                             <constraint firstAttribute="centerX" secondItem="TDi-AG-wWw" secondAttribute="centerX" id="bHK-GI-xVj"/>
                             <constraint firstAttribute="trailing" secondItem="gV7-eX-Qvg" secondAttribute="trailing" constant="16" id="e66-Fm-tZg"/>
@@ -225,6 +232,7 @@
                         <outlet property="challengeDescriptionView" destination="gV7-eX-Qvg" id="SoB-pn-7tj"/>
                         <outlet property="challengeNameView" destination="TDi-AG-wWw" id="ig9-81-dRp"/>
                         <outlet property="descriptionText" destination="l2y-Tk-aFT" id="ogx-aT-GCu"/>
+                        <outlet property="participants" destination="vyD-Aj-Fec" id="7NB-f3-OuR"/>
                         <outlet property="peopleText" destination="xAG-5O-yUf" id="Ehv-g5-ked"/>
                         <outlet property="timeLimitPicker" destination="DRE-9y-OsH" id="hvz-rA-zxt"/>
                         <outlet property="timeLimitText" destination="A4x-xA-oel" id="nh5-ja-kel"/>

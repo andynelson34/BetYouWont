@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "FirstViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
