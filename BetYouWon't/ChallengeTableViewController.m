@@ -12,11 +12,13 @@
 
 @end
 
-@implementation ChallengeTableViewController {
-    NSString *challengeName;
-}
+@implementation ChallengeTableViewController
 
 - (void)viewDidLoad {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    challengeName = [defaults objectForKey:@"challengeName"];
+    
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -24,6 +26,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (NSString *)getChallengeName {
+    return challengeName;
 }
 
 - (void)setChallengeName:(NSString *)challengeStr {
