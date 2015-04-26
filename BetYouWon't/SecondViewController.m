@@ -39,4 +39,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)enterData:(UIButton *)sender {
+    
+    
+    NSString *title = _titleText.text;
+    NSString *description = _descriptionText.text;
+    NSString *timeLimit = _timeLimitText.text;
+    NSString *to = _peopleText.text;
+    NSDate *limit = _timeLimitPicker.date;
+    NSString *from = @"Me!";
+    
+    NSURL *URL = [NSURL URLWithString:@"http://5cba3813.ngrok.com/challenge"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    // Set request type
+    request.HTTPMethod = @"POST";
+    
+    // Set params to be sent to the server
+    NSDictionary *tmp = [[NSDictionary alloc] initWithObjectsAndKeys:
+                         description, @"description",
+                         to, @"to",
+                         from, @"from",
+                         limit, @"end_date",
+                         nil];
+    
+    NSError *error;
+    NSData *data = [NSJSONSerialization dataWithJSONObject:tmp options:0 error:&error];
+    
+    // Add values and contenttype to the http header
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:[NSString stringWithFormat:@"%lu", (unsigned long)[data length]] forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:data];
+    
+    // Send the request
+    [NSURLConnection connectionWithRequest:request delegate:self];
+    
+    
+}
+
 @end

@@ -21,10 +21,32 @@
 @implementation FirstViewController
 
 NSArray *tableData;
+FBSDKLoginButton *loginButton;
 
 - (void)viewDidLoad {
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkLogin) name:UIApplicationWillEnterForegroundNotification object:nil];
     [super viewDidLoad];
+    loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
     if (![FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"You're out");
+        // Disable tab bar interaction if user isn't logged in
+        for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
+            [tmpTabBarItem setEnabled:NO];
+        }
+    } else {
+        NSLog(@"You're in");
+        NSLog([FBSDKAccessToken currentAccessToken].userID);
+        // Enable tab bar interaction if user is logged in
+        for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
+            [tmpTabBarItem setEnabled:YES];
+        }
+        [loginButton removeFromSuperview];
+    }
+        /*if (![FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"You're out");
         // Disable tab bar interaction if user isn't logged in
         for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
             [tmpTabBarItem setEnabled:NO];
@@ -33,17 +55,38 @@ NSArray *tableData;
         loginButton.center = self.view.center;
         [self.view addSubview:loginButton];
     } else {
+        NSLog(@"You're in");
         // Enable tab bar interaction if user is logged in
         for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
             [tmpTabBarItem setEnabled:YES];
         }
         //Display news feed
         tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
-    }
+    }*/
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void) checkLogin {
+    NSLog(@"Checking login");
+    if (![FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"You're out");
+        // Disable tab bar interaction if user isn't logged in
+        for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
+            [tmpTabBarItem setEnabled:NO];
+        }
+        FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+        loginButton.center = self.view.center;
+        [self.view addSubview:loginButton];
+    } else {
+        NSLog(@"You're in");
+        // Enable tab bar interaction if user is logged in
+        for (UITabBarItem *tmpTabBarItem in [[self.tabBarController tabBar] items]) {
+            [tmpTabBarItem setEnabled:YES];
+        }
+    }
+}
+
+/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [tableData count];
 }
@@ -66,7 +109,7 @@ NSArray *tableData;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+}*/
 
 
 @end
