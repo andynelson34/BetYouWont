@@ -44,6 +44,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    //to-do: Replace this image with the profile picture of the challenger
+    cell.imageView.image = [UIImage imageNamed:@"BYWlogo2.png"];
     return cell;
 }
 
