@@ -7,12 +7,13 @@
 //
 
 #import "ProfileViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ProfileViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *challengesText;
 @property (weak, nonatomic) IBOutlet UILabel *historyText;
-@property (weak, nonatomic) IBOutlet UICollectionView *historyPics;
 @property (weak, nonatomic) IBOutlet UIImageView *profPic;
 @property (weak, nonatomic) IBOutlet UILabel *completedNum;
 @property (weak, nonatomic) IBOutlet UILabel *username;
@@ -21,11 +22,19 @@
 
 @implementation ProfileViewController
 
+NSArray *historyPics;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //to-do: change the following three variables to be user-specific from the database
     _completedNum.text = @"29";
     _username.text = @"emshack92";
+    _profPic.image = [UIImage imageNamed:@"BYWlogo2.png"];
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = CGPointMake(187.5, 475);
+    [self.view addSubview:loginButton];
+
 }
 
 
@@ -33,7 +42,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
 #pragma mark - Navigation
